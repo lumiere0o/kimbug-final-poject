@@ -1,0 +1,496 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Reset Css */
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+text-area{
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+text-area:focus,
+text-area:active{
+    outline: none;
+    box-shadow: none;
+}
+
+ul,
+ol,
+li{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+.fill-button{
+    width: 140px;
+    height: 48px;
+    background-color: rgb(251, 177, 177);
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    transition: all 300ms ease-in-out;
+    border: none;
+}
+
+.fill-button.inverted{
+    background-color: #fff;
+    color:rgb(201, 140, 140);
+}
+
+.fill-button:hover{
+    opacity: 80%;
+    color: rgb(139, 52, 52);
+}
+
+.section{
+    padding: 80px 0;
+}
+
+.section-category{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+.section-title{
+    margin-bottom: 24px;
+    font-size: 34px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    color: #2b292d;
+}
+
+/* Program */
+.program .row:first-child{
+    margin-bottom: 32px;
+}
+
+.program .col-md-4{
+    margin-bottom: 20px;
+}
+
+.program .col-md-4:last-child{
+    margin-bottom: 0px;
+}
+
+.program .section-category{
+    color:rgb(235, 73, 73);
+}
+
+.program-card{
+    display: block;
+    padding: 24px 0 32px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: background-color 300ms ease-in,
+    box-shadow 300ms ease-in;
+}
+
+.program-card:hover{
+    background-color: rgb(249, 179, 179);
+    box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
+}
+
+.program-card:hover strong{
+    color: #fff;
+}
+
+.program-card img{
+    display: block;
+    width: auto;
+    height: 195px;
+    margin: 0 auto 18px;
+
+}
+
+.program-card strong{
+    font-size: 18px;
+    line-height: 1.3333;
+    letter-spacing: -0.02em;
+    transition: color 500ms ease-in-out;
+}
+
+
+
+/* Landing */
+.landing{
+    background-color: #fdded8;
+    font-size: 40px;
+    line-height: 1;
+    text-align: center;
+}
+
+.landing-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.landing-title{
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+}
+
+.landing-desc{
+    margin-bottom: 20px;
+}
+
+.landing .button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .button-group .fill-button:first-child{
+    margin-right: 8px;
+}
+
+
+/* Service */
+.service{
+    background-color: #f4f5f7;
+    padding: 80px 0;
+}
+
+.service-title{
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 1.3;
+    letter-spacing: -0.04em;
+    color: #2b292d;
+}
+
+.service .col-12:first-child{
+    margin-bottom: 40px;
+}
+
+
+/* Curriculum */
+.curriculum .row:last-child .col-12:first-child{
+    margin-bottom: 40px;
+}
+
+.curriculum .row:first-child{
+    margin-bottom: 40px;
+}
+
+.curriculum .section-category{
+    color: rgb(194, 88, 152);
+}
+
+.curriculum .section-desc{
+    margin-bottom: 32px;
+}
+
+.curriculum-image{
+    display: none;
+}
+
+.curriculum-detail-desc{
+    font-size: 15px;
+    line-height: 1.46;
+    letter-spacing: -0.01em;
+    color: rgba(43, 41, 45, 1);
+
+}
+
+/* Subscription */
+.subscription{
+    background-color: #f2f8fa;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.subscription-image{
+    padding: 25px 0;
+}
+
+.subscription-image img{
+    display: block;
+    height: 190px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.subscription-title{
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #2b292d; 
+    margin-bottom: 16px;
+}
+
+.subscription-desc{
+    margin-bottom: 24px;
+}
+
+.subscription .input-group{
+    margin-bottom: 8px;
+}
+
+.subscription .input-group input{
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 8px;
+}
+
+.subscription .input-group .fill-button {
+    width: 100%;
+}
+
+.subscription-form .form-notice{
+    font-size: 13px;
+    line-height: 1.53;
+    letter-spacing: 0;
+    color: #7b7b7e;
+}
+
+.subscription-form .form-notice a{
+    color:#f49986;
+}
+
+
+/* Footer */
+footer{
+    padding: 24px 0;
+}
+
+.footer-link{
+    margin-bottom: 8px;
+}
+
+.footer-link:last-child{
+    margin-bottom: 0;
+}
+
+.footer-link a{
+    font-size: 14px;
+    line-height: 1.7;
+    color: #7b7b7e;
+}
+
+
+/* 768px 이상 Desktop */
+@media screen and (min-width: 768px){
+    /* Reset Css */
+    p{
+        font-size: 22px;
+        line-height: -0.01em;
+    }
+
+    .fill-button{
+        width: 160px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.555;
+    }
+
+    .section-category{
+        font-size: 22px;
+        line-height: 1.090;
+        margin-bottom: 16px;
+    }
+
+    .section-title{
+        font-size: 56px;
+        line-height: 1;
+        margin-bottom: 32px;
+    }
+
+    .section{
+        padding-bottom: 86px;
+    }
+
+    /* Landing */
+    .landing-content{
+        height: auto;
+        padding: 120px 0;
+    }
+
+    .landing-title{
+        margin-bottom: 32px;
+        font-size: 82px;
+        line-height: 1.028;
+    }
+
+    .landing-desc{
+        margin-bottom: 32px;
+    }
+
+    .landing .button-group .fill-button:first-child{
+    margin-right: 16px;
+    }
+
+    /* Service */
+    .service .col-12:first-child{
+        margin-bottom: 0px;
+    }
+
+    .service-title{
+        font-size: 26px;
+        line-height: 1.38;
+    }
+
+
+    /* Program */
+    .program {
+        text-align: center;
+    }
+
+    .program .row:first-child {
+         margin-bottom: 72px;
+    }
+
+    .program-card img{
+        margin-bottom: 20px;
+    }
+
+    .program-card strong{
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+
+    /* Curriculum */
+    .curriculum .row:first-child{
+        margin-bottom: 24px;
+    }
+
+    .curriculum .row:last-child .col-12:first-child{
+        margin-bottom: 0;
+    }
+
+    .curriculum .section-desc{
+        margin-bottom: 72px;
+    }
+
+    .curriculum-detail-desc{
+        font-size: 18px;
+        line-height: 1.4444;
+    }
+
+    .curriculum-image {
+        display: block;
+    }
+
+    .curriculum-image img{
+        display: block;
+        width: 100%;
+        max-width: 425px;
+        height: auto;
+    }
+
+
+    /* Subscribtion */
+    .subscription{
+        text-align: left;
+        padding: 80px 0;
+    }
+
+    .subscription-image{
+        padding: 8px 0px;
+    }
+
+    .subscription-image img{
+        height: 285px;
+        margin-left: 0;
+    }
+
+    .subscription-title{
+        font-size: 40px;
+    }
+
+    .subscription .input-group{
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+    }
+
+     .subscription .input-group input{
+        height: 56px;
+        margin-bottom: 0;
+        margin-right: 8px;
+        font-size: 17px;
+        line-height: 1.33;
+     }
+
+    .subscription .input-group .fill-button{
+        width: 160px;
+        flex-shrink: 0; 
+        /* 항상 160px을 유지하도록 */
+    }
+
+    .subscription-form .form-notice{
+        font-size: 14px;
+        line-height: 1.4
+    }
+
+
+    /* Footer */
+    footer{
+        padding: 16px 0; 
+    }
+
+    .footer-links{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .footer-link{
+        margin-bottom: 0;
+        margin-right: 16px;
+    }
+
+    .footer-link:last-child{
+        margin-right: 0;
+    }
+}
+
+
+/* Custom Grid System - fix container width */
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 960px !important;
+    }
+}
